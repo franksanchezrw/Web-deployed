@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    @apply w-full
+  }
+
+  .section {
+    @apply container mx-auto pt-24 pb-6;  
+  }
+
+
+}
+
+a {
+  @apply no-underline;
+}
+.et-hero-tabs,
+.et-slide {
+  @apply flex flex-col justify-center items-center h-screen relative text-center px-[2em] py-7;
+  
+}
+.et-hero-tabs h1,
+.et-slide h1 {
+  @apply text-[2rem] tracking-[1rem] m-0;
+}
+.et-hero-tabs h3,
+.et-slide h3 {
+  @apply text-base tracking-[0.3rem] opacity-60;
+}
+.et-hero-tabs-container {
+  @apply flex flex-row absolute bg-blue-100  h-[60px] shadow-[0_0_20px_rgba(0,0,0,0.1)] z-10 bottom-0;
+  
+}
+.et-hero-tabs-container--top {
+  @apply fixed bottom-1;
+}
+.et-hero-tab {
+  @apply flex justify-center items-center flex-1 text-black tracking-[0.1rem] transition-all duration-[0.5s] ease-[ease] text-[0.8rem] hover:text-[white] hover:transition-all hover:duration-[0.5s] hover:ease-[ease];
+}
+.et-hero-tab.active,
+.et-hero-tab:hover {
+  @apply text-[#fff];
+  background: #4285f4;
+}
+.et-hero-tab-slider {
+  @apply absolute w-0 h-1.5 transition-[left] duration-[0.3s] ease-[ease] bottom-0;
+  background: #66b1f1;
+}
+@media (min-width: 800px) {
+  .et-hero-tabs h1 {
+    @apply text-5xl;
+  }
+  .et-hero-tabs h3 {
+    @apply text-base;
+  }
+  .et-hero-tab {
+    @apply text-base;
+  }
+}
+
+

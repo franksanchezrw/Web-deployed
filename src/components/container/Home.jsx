@@ -7,7 +7,7 @@ import edit from "../../assets/ediit.png";
 import r1 from "../../assets/R5.png";
 import Sticky from "./Sticky";
 import Biz from "./Biz";
-import Svm from "./Svm";
+// import Svm from "./Svm";
 import Footer from "./Footer";
 import Swipe from "./Swipe";
 
@@ -18,13 +18,17 @@ const Home = () => {
       {/* 1st section */}
 
 
+
+
+
       <div className="  bg-gradient-to-tl from-indigo-700 via-white to-violet-300 ">
    
-      <div className="section px-1 ">
    
+      <div className="section px-1 h-[90%]">
+
          <div className="md:flex items-center justify-center">
           <div className="mr-10 animate__animated animate__slideInLeft">
-            <div className="sm:text-[2.7rem] text-center text-[1.8rem] max-sm:pt-10 font-bold">
+            <div className="sm:text-[2.7rem] text-center max-sm:pt-20 text-[1.8rem] max-sm font-bold">
               Artificial Intelligence <br />
               Digitally Transforming <br /> Your Business
             </div>
@@ -59,7 +63,7 @@ const Home = () => {
 
       <div className=" ">
         <div className="py-10 bg-gradient-to-r  from-amber-300 via-fuchsia-300 to-teal-400">
-          <div className=" sm:w-3/4 mx-auto px-auto py-10">
+          <div className=" sm:w-3/4 max-sm:px-16 max-sm:py-16  mx-auto px-auto py-10">
             <h1 className="text-3xl text-center  ">
               Our Excellent AI Solutions for Your Business
 
@@ -73,7 +77,7 @@ const Home = () => {
         </div>
           <section
 
-      className='flex justify-between items-center max-lg:flex-col gap-10 w-full py-28 max-container px-24'
+      className='flex justify-between items-center max-lg:flex-col gap-10 w-full py-28 max-container px-24 max-sm:px-10'
     >
           <motion.div className='flex-1 flex justify-center items-center'
             initial = {{opacity: 0, scale: 0}}
@@ -94,7 +98,7 @@ const Home = () => {
             whileInView = {{opacity: 1, scale: 1}}
             transition = {{duration: 0.9}}
             >
-        <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg font-bold'>
+        <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg  font-bold'>
           Optimize Your Data & 
                 <span className='text-amber-500'> Business </span> Process
         </h2>
@@ -124,7 +128,7 @@ const Home = () => {
 
             <section
 
-      className='flex justify-between items-center max-lg:flex-col gap-10 w-full py-28 max-container px-24'
+      className='flex justify-between items-center max-lg:flex-col gap-10 w-full py-28 max-container px-24 max-sm:gap-20 max-sm:px-10'
     >
       <div className='flex flex-1 flex-col'>
         <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg font-bold'>
@@ -162,8 +166,8 @@ const Home = () => {
       </div>
     </section>
 
-        <section className='max-container flex justify-center flex-wrap text-gray px-24 gap-8'>
-    <div className='flex-1 bg-white sm:w-[350px] sm:min-w-[350px] w-full rounded-[8px] shadow-xl px-10 py-6'>
+        <section className='max-container flex justify-center flex-wrap text-gray px-24 max-sm:px-10 gap-8'>
+    <div className='flex-1 bg-white sm:w-[350px] sm:min-w-[350px] max-sm:min-w-[300px] w-full rounded-[8px] shadow-xl px-10 py-6'>
 
       <h3 className='mt-5  text-3xl leading-normal font-bold'>
             Service
@@ -172,7 +176,7 @@ const Home = () => {
         hello there this is the service one. in this section we will see about service
       </p>
     </div>   
-    <div className='flex-1 bg-white sm:w-[350px] sm:min-w-[350px] w-full rounded-[8px] shadow-xl px-10 py-6'>
+    <div className='flex-1 bg-white sm:w-[350px] sm:min-w-[350px] max-sm:min-w-[300px] w-full rounded-[8px] shadow-xl px-10 py-6'>
 
       <h3 className='mt-5  text-3xl leading-normal font-bold'>
             Data
@@ -181,7 +185,7 @@ const Home = () => {
         hello there this is the service one. in this section we will see about service
       </p>
     </div>
-    <div className='flex-1 bg-white sm:w-[350px] sm:min-w-[350px] w-full rounded-[8px] shadow-xl px-10 py-6'>
+    <div className='flex-1 bg-white sm:w-[350px] sm:min-w-[350px] max-sm:min-w-[300px] w-full rounded-[8px] shadow-xl px-10 py-6'>
 
       <h3 className='mt-5  text-3xl leading-normal font-bold'>
             Cloud
@@ -203,12 +207,12 @@ const Home = () => {
    
 </div> 
      
-<div className='   rounded-[8px] shadow-xl mx-auto my-10 my-4 px-10 py-6  '>
+<div className='   rounded-[8px] shadow-xl mx-auto my-10 my-4 px-10 max-sm:px-6 py-6  '>
      <section
  
-      className='max-container px-20 py-10 flex justify-center  px-36 items-center max-lg:flex-col gap-10'
+      className='max-container  py-10 flex justify-center max-sm:px-10  px-36 items-center max-lg:flex-col gap-10'
     >
-      <h3 className='text-4xl leading-[68px] text-black lg:max-w-lg  font-bold'>
+      <h3 className='text-4xl max-sm:leading-[60px] leading-[68px] text-black lg:max-w-lg  font-bold'>
         Sign Up for
         <span className=''> Updates </span>& trusted domain Newsletter
       </h3>
@@ -230,11 +234,15 @@ const Home = () => {
      <h3 className='text-4xl text-black text-center py-20 pb-16 font-bold'>
         Our Clients across the world
       </h3>
-   <Svm  />
+  <div className="px-24 max-sm:px-2">
+  {/* <Svm  /> */}
+  <img alt="map"/>
+  </div>
+   
 </motion.div>
               <section
 
-      className='flex justify-between shadow-md items-center max-lg:flex-col gap-10 w-full py-20 max-container px-24'
+      className='flex justify-between shadow-md items-center max-lg:flex-col gap-10 w-full py-20 max-container px-24 max-sm:px-12'
     >
          <motion.div className='flex-1 flex justify-center items-center'
                      initial = {{opacity: 0, scale: 0}}
@@ -249,7 +257,7 @@ const Home = () => {
 
         />
       </motion.div>     
-      <motion.div className='flex flex-1 flex-col justify-center items-center sm:px-10'
+      <motion.div className='flex flex-1 flex-col justify-center items-center  sm:px-10'
                   initial = {{opacity: 0, scale: 0}}
             whileInView = {{opacity: 1, scale: 1}}
             transition = {{duration: 0.9}}>
@@ -279,7 +287,7 @@ const Home = () => {
 
            <section
 
-      className='flex justify-between items-center max-lg:flex-col gap-10 w-full pt-24 pb-36 max-container px-24'
+      className='flex justify-between items-center max-lg:flex-col gap-10 w-full pt-24 pb-36 max-container px-24 max-sm:px-14'
     >
         
       <motion.div className='flex flex-1 flex-col'

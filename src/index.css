@@ -64,3 +64,8 @@ a {
 }
 
 
+@keyframes move {
+  to {
+    @apply -translate-x-full;
+  }
+}

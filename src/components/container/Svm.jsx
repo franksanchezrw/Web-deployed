@@ -3,7 +3,12 @@ import React, { useEffect } from 'react';
 const Svm = () => {
     useEffect(() => {
         document.querySelectorAll(".allp").forEach((e) => {
+          document.querySelectorAll(".India").forEach((country) => {
+                    country.style.fill = "green";
+                });
+
             e.setAttribute('class', `allp ${e.id}`);
+
             e.addEventListener("mouseover", function () {
                 window.onmousemove = function (j) {
                     // let x = j.clientX;
@@ -14,6 +19,7 @@ const Svm = () => {
                 document.querySelectorAll(`.${classes}`).forEach((country) => {
                     country.style.fill = "greenyellow";
                 });
+
                 document.getElementById("name").style.opacity = 1;
 
                 document.getElementById("namep").innerText = e.id;
@@ -33,8 +39,7 @@ const Svm = () => {
     }, []);
 
 
-    const svgHtml = `<!DOCTYPE html>
-<html>
+    const svgHtml = `
 
 <style>
 
@@ -50,7 +55,9 @@ const Svm = () => {
         font-size: 2rem;
 
     }
-
+#Indian-Client {
+          background-color: green;
+}
 
 
     
@@ -62,7 +69,7 @@ const Svm = () => {
 </style>
 
 
-<body>
+
       <div id="name">
         <p id="namep">eeeeeeee</p>
     </div>
@@ -1048,11 +1055,8 @@ THE SOFTWARE.
 </svg>
 
 
-</body>
 
-
-
-</html>`;
+`;
 
     return <div dangerouslySetInnerHTML={{ __html: svgHtml }} />;
 };

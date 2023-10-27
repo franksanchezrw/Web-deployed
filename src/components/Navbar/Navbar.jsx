@@ -12,10 +12,13 @@ const Navbar = () => {
 					<div className="flex items-center gap-4">
 						
 
-						      <div class="py-1"><img className="w-28" src="https://beauroi.com/img/Logo-Beauroi.png"/></div>
+						      <div class="py-1 pl-4"><img className="w-28" src="https://beauroi.com/img/Logo-Beauroi.png"/></div>
 					</div>
 					
 					<div className="flex"	>
+
+
+					
 
 					<div className="sm:flex items-center justify-center hidden">
 						<li className="list-none cursor-pointer mr-8 font-bold transition-all duration-300">About</li>
@@ -25,8 +28,8 @@ const Navbar = () => {
 						
 					</div>
 
-					<button className="py-2  px-4 ml-8 font-bold text-sm border border-solid hover:bg-blue-400 rounded-md transition duration-300 bg-gradient-to-tr from-sky-100 via-cyan-300 to-red-200 border-gray">Sign Up</button>
-					<HiMenuAlt1 className=" ml-4 text-3xl sm:hidden cursor-pointer" onClick={()=> setToggle(true)} />
+					<button className="py-2 max-sm:text-xs  px-4 ml-8 font-bold text-sm border border-solid hover:bg-blue-400 rounded-md transition duration-300 bg-gradient-to-tr from-sky-100 via-cyan-300 to-red-200 border-gray">Sign Up</button>
+					<HiMenuAlt1 className=" mr-8 ml-8 text-3xl sm:hidden cursor-pointer" onClick={()=> setToggle(true)} />
 					
 					{toggle && <div className="fixed h-full w-96 top-0 left-0 z-20 bg-white text-black flex flex-col justify-center items-center shadow-lg gap-8 py-8">
 						<li className="list-none cursor-pointer mr-8 font-bold transition-all duration-300">About</li>
